@@ -109,3 +109,91 @@ div.line {
 	margin-right: auto;
 	margin-left: auto;
 }
+.acad_detail {
+	position: relative;
+}
+.acad_list {
+	position: absolute;
+	left: 80px;
+	top: 106px;
+}
+.acad_list.acad_02, .acad_list.acad_04 {
+	left: 76px;
+}
+.acad_list li {
+	line-height: 24px;
+	font-size: 12px;
+	margin-bottom: 6px;
+}
+.acad_list li.rowspan02 {
+	margin-bottom: 0;
+}
+.acad_list .acad_month {
+	float: left;
+	background: #c4475a;
+	color: #fff;
+	width: 35px;
+	height: 24px;
+	padding-right: 11px;
+	text-align: right;
+}
+.rowspan02 .acad_month {
+	height: 30px;
+}
+.rowspan03 .acad_month {
+	height: 53px;
+	line-height: 26px;
+}
+.acad_02 .acad_month {
+	background: #ed9000;
+}
+.acad_03 .acad_month {
+	background: #c4475a;
+}
+.acad_04 .acad_month {
+	background: #187fc4;
+	height: 114px;
+	line-height: 28px;
+}
+.acad_list a.btn_acad {
+	float: left;
+	display: block;
+	background: #fff;
+	width: 329px;
+	text-align: left;
+	padding-left: 6px;
+	position: relative;
+}
+.acad_list a.btn_acad:after {
+	content: " ";
+	height: 24px;
+	width: 9px;
+	background: url(../academics/images/btn_arrow01.png) no-repeat;
+	position: absolute;
+	right: -9px;
+}
+.rowspan03 a.btn_acad {
+	height: 53px;
+	line-height: 53px;
+}
+.rowspan03 a.btn_acad:after {
+	height: 53px;
+	background: url(../academics/images/btn_arrow03.png) no-repeat;
+}
+.acad_01 a.btn_acad {
+	color: #eb5269;
+}
+.acad_02 a.btn_acad {
+	color: #f6ad3c;
+}
+.acad_03 a.btn_acad {
+	color: #e9546b;
+}
+.acad_04 a.btn_acad {
+	color: #106faf;
+	height: 114px;
+	line-height: 114px;
+}
+.acad_04 a.btn_acad:after {
+	display: none;
+}
