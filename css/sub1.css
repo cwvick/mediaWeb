@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+#subtext {
+	width: 820px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0px;
+	margin-bottom: 30px;
+	line-height: 200%;
+	text-align: justify;
+}
+h1 {
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 6px;
+	color: #444444;
+	text-align: left;
+}
+/*h2 {
+	font-size: 12px;
+	font-weight: bold;
+	margin-top: 36px;
+	margin-bottom: 6px;
+	color: #444444;
+	text-align: left;
+	margin-left: 80px;
+}
+h2.type1 {
+	width: 660px;
+	font-size: 11px;
+	font-weight: normal;
+	margin-top: 0px;
+	color: #444444;
+	text-align: justify;
+	margin-left : auto ; 
+	margin-right : auto ;
+}*/
+.box1 {
+	/*width: 778px;
+	height: 330px;*/
+	width: 660px;
+	height: 293px;
+	overflow: hidden;
+	background: url(../topics/images/frame01.png) no-repeat;
+	margin: 0 auto 10px;
+	padding: 37px 60px 0 58px;
+}
+.box1 h2 {
+	font-size: 12px;
+	font-weight: bold;
+	color: #444;
+}
+.box1 h2.type1 {
+	font-size: 11px;
+	font-weight: normal;
+	text-align: justify;
+	margin-top: 5px;
+}
+div.image1 {
+	float: left;
+	margin-left: 36px;
+	margin-right: -10px;
+	margin-bottom: 16px;	
+	width: 360px;
+	font-size: 11px;
+	color: #444;
+	line-height: 22px;
+	text-align: center;
+}
+div.image2 {
+	float: left;
+	margin-left: 10px;
+	margin-right: -10px;
+	margin-bottom: 16px;	
+	width: 800px;
+	font-size: 11px;
+	color: #444;
+	line-height: 22px;
+	text-align: center;
+}
+div.image3 {
+	float: left;
+	margin-left: 20px;
+	margin-bottom: 0px;
+	margin-top: -290px;
+	width: 290px;
+	font-size: 11px;
+	color: #999;
+	line-height: 17px;
+}
+
+div.title1 {
+	float: left;
+	margin-left: -15px;
+	margin-bottom: 0px;	
+	width: 150px;
+	font-size: 11px;
+	color: #999;
+	line-height: 17px;
+}
+div.line {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/*resposive for type3*/
+.type3 #subtext {
+	width: 96%;
+	padding: 0 2%;
+}
+.type3 .title1 {
+	margin-left: 0;
+}
+.type3 .box1 {
+	width: 96%;
+	height: auto;
+	padding: 0;
+	/*-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;*/
+	background: none;
+	background-color: #eee;
+	margin-top: 10px;
+}
+.type3 .image1 {
+	margin: 10px auto;
+}
+.type3 .image2 {
+	margin: 0 0 16px;
+}

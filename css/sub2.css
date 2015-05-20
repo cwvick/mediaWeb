@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+#subtext {
+	width: 980px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0px;
+	margin-bottom: 30px;
+	line-height: 200%;
+	text-align: justify;
+	background-image: url(../factulty/images/bk_color.png);
+}
+h1 {
+	font-size: 14px;
+	font-weight: normal;
+	margin-bottom: 6px;
+	line-height: 200%;
+	color: #444444;
+	text-align: left;
+}
+h2 {
+	width: 650px;
+	font-size: 12px;
+	font-weight: normal;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 96px;
+	color: #444444;
+	text-align: justify;
+}
+h3 {
+	font-size: 18px;
+	font-weight: normal;
+	height: 70px;
+	color: #FFFFFF;
+	background-color: #f5b2b2;
+	text-align: left;
+	margin-top: -30px;
+}
+h4 {
+	font-size: 18px;
+	font-weight: normal;
+	height: 70px;
+	color: #FFFFFF;
+	background-color: #f5b090;
+	text-align: left;
+	margin-top: -36px;
+}
+h5 {
+	font-size: 18px;
+	font-weight: normal;
+	height: 70px;
+	color: #FFFFFF;
+	background-color: #e9546b;
+	text-align: left;
+	margin-top: -30px;
+}
+h2.type1 {
+	width: 660px;
+	font-size: 11px;
+	font-weight: normal;
+	margin-top: 0px;
+	color: #444444;
+	text-align: justify;
+	margin-left : auto ; 
+	margin-right : auto ;
+}
+div.image1 {
+	float: left;
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 980px;
+	font-size: 11px;
+	color: #444;
+	line-height: 22px;
+	text-align: center;
+}
+div.image2 {
+	float: left;
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 490px;
+	font-size: 11px;
+	color: #444;
+	line-height: 22px;
+	text-align: center;
+}
+div.image3 {
+	float: left;
+	margin-left: 20px;
+	margin-bottom: 0px;
+	margin-top: -290px;
+	width: 290px;
+	font-size: 11px;
+	color: #999;
+	line-height: 17px;
+}
+
+div.title1 {
+	float: left;
+	margin-left: -15px;
+	margin-bottom: 0px;	
+	width: 150px;
+	font-size: 11px;
+	color: #999;
+	line-height: 17px;
+}
+div.line {
+	margin-right: auto;
+	margin-left: auto;
+}
