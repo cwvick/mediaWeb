@@ -189,16 +189,15 @@ strong {
 .type1 #gnavi ul li {
 	list-style-type: none;
 }
-.type1 #gnavi:after{
-  /*クリアフィックス*/
+/*.type1 #gnavi:after{
     content: "."; 
     display: block; 
     height: 0; 
     font-size:0;  
     clear: both; 
     visibility:hidden;
-}
-.type1 #gnavi ul li a {
+}*/
+/*.type1 #gnavi ul li a {
 	display: block;
 	width: 140px;
 	height: 70px;
@@ -261,6 +260,137 @@ strong {
 .type1 #gnavi ul li#gnavi07.select a,
 .type1 #gnavi ul li#gnavi07.active a {
 	background-image: url(../images/common/gnavi_sel/gnavi07.gif);	
+}*/
+
+.type1 #gnavi ul li {
+	float: left;
+	width: 122px;
+	height: 60px;
+	overflow: hidden;
+	text-indent: -9999px;
+}
+.type1 #gnavi ul li .icon {
+	height: 36px;
+	width: 100%;
+	overflow: hidden;
+	background: url(../images/common/gnavi/navi_01_sprites.png) no-repeat;
+}
+.type1 #gnavi ul li .icon:hover, #gnavi ul li.active .icon {
+	-webkit-animation: spin 3.5s infinite linear;
+	-moz-animation: spin 3.5s infinite linear;
+	-o-animation: spin 3.5s infinite linear;
+	animation: spin 3.5s infinite linear;
+}
+.type1 #gnavi ul li .text {
+	height: 24px;
+	width: 100%;
+	overflow: hidden;
+	background: url(../images/common/gnavi/navi_01_sprites.png) no-repeat;
+}
+.type1 #gnavi ul li.gnavi01, .type1 #gnavi ul li.gnavi08 {
+	width: 124px;
+}
+.type1 #gnavi ul li.gnavi01 .text {
+	background-position: 0 -36px;
+}
+.type1 #gnavi ul li.gnavi01:hover .text, .type1 #gnavi ul li.gnavi01.active .text {
+	background-position: 0 -60px;
+}
+.type1 #gnavi ul li.gnavi02 .icon {
+	background-position: -124px 0;
+}
+.type1 #gnavi ul li.gnavi02 .text {
+	background-position: -124px -36px;
+}
+.type1 #gnavi ul li.gnavi02:hover .text, .type1 #gnavi ul li.gnavi02.active .text {
+	background-position: -124px -60px;
+}
+.type1 #gnavi ul li.gnavi03 .icon {
+	background-position: -246px 0;
+}
+.type1 #gnavi ul li.gnavi03 .text {
+	background-position: -246px -36px;
+}
+.type1 #gnavi ul li.gnavi03:hover .text, .type1 #gnavi ul li.gnavi03.active .text {
+	background-position: -246px -60px;
+}
+.type1 #gnavi ul li.gnavi04 .icon {
+	background-position: -368px 0;
+}
+.type1 #gnavi ul li.gnavi04 .text {
+	background-position: -368px -36px;
+}
+.type1 #gnavi ul li.gnavi04:hover .text, .type1 #gnavi ul li.gnavi04.active .text {
+	background-position: -368px -60px;
+}
+.type1 #gnavi ul li.gnavi05 .icon {
+	background-position: -490px 0;
+}
+.type1 #gnavi ul li.gnavi05 .text {
+	background-position: -490px -36px;
+}
+.type1 #gnavi ul li.gnavi05:hover .text, .type1 #gnavi ul li.gnavi05.active .text {
+	background-position: -490px -60px;
+}
+.type1 #gnavi ul li.gnavi06 .icon {
+	background-position: -612px 0;
+}
+.type1 #gnavi ul li.gnavi06 .text {
+	background-position: -612px -36px;
+}
+.type1 #gnavi ul li.gnavi06:hover .text, .type1 #gnavi ul li.gnavi06.active .text {
+	background-position: -612px -60px;
+}
+.type1 #gnavi ul li.gnavi07 .icon {
+	background-position: -734px 0;
+}
+.type1 #gnavi ul li.gnavi07 .text {
+	background-position: -734px -36px;
+}
+.type1 #gnavi ul li.gnavi07:hover .text, .type1 #gnavi ul li.gnavi07.active .text {
+	background-position: -734px -60px;
+}
+.type1 #gnavi ul li.gnavi08 .icon {
+	background-position: -856px 0;
+}
+.type1 #gnavi ul li.gnavi08 .text {
+	background-position: -856px -36px;
+}
+.type1 #gnavi ul li.gnavi08:hover .text, .type1 #gnavi ul li.gnavi08.active .text {
+	background-position: -856px -60px;
+}
+
+@-webkit-keyframes spin {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+@-moz-keyframes spin {
+	from {
+		-moz-transform: rotate(0deg);
+	}
+	to {
+		-moz-transform: rotate(360deg);
+	}
+}
+@-o-keyframes spin {
+	from {
+		-o-transform: rotate(0deg);
+	}
+	to {
+		-o-transform: rotate(360deg);
+	}
+}
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
 /***************グローバルナビ（smp）***************/
 .type3 #gnavi ul {
@@ -268,55 +398,17 @@ strong {
 	font-size: 16px;
 	display: none;
 	z-index: 100;
-	border-top: 1px solid #FFF;
-	background-color: #FFF;
+	border-top: 1px solid #fff;
+	background-color: #fff;
 }
 .type3 #gnavi ul li a {
 	display: block;
 	width: 100%;
 	height: 44px;
-	border-bottom: 1px solid #FFF;
-	color: #FDFDFD;
-	line-height: 44px;
-	text-indent: 50px;
-	background-size: 22px 22px;
-	background-repeat: no-repeat;
-	background-position: 10px 10px;
+	border-bottom: 1px solid #fff;
 }
 .type3 #gnavi ul li a:hover {
 	opacity: 0.7;
-}
-.type3 #gnavi ul li#gnavi00 a {
-	background-color: #BBB;
-	background-image: url(../images/common/icon/icon01.png);
-}
-.type3 #gnavi ul li#gnavi01 a {
-	background-color: #F27A8C;
-	background-image: url(../images/common/icon/icon02.png);
-}
-.type3 #gnavi ul li#gnavi02 a {
-	background-color: #007BC9;
-	background-image: url(../images/common/icon/icon02.png);
-}
-.type3 #gnavi ul li#gnavi03 a {
-	background-color: #EB4997;
-	background-image: url(../images/common/icon/icon02.png);
-}
-.type3 #gnavi ul li#gnavi04 a {
-	background-color: #00ADF1;
-	background-image: url(../images/common/icon/icon02.png);
-}
-.type3 #gnavi ul li#gnavi05 a {
-	background-color: #A74299;
-	background-image: url(../images/common/icon/icon02.png);
-}
-.type3 #gnavi ul li#gnavi06 a {
-	background-color: #00ADAB;
-	background-image: url(../images/common/icon/icon02.png);
-}
-.type3 #gnavi ul li#gnavi07 a {
-	background-color: #F9AF00;
-	background-image: url(../images/common/icon/icon02.png);
 }
 #menu_sw {
 	cursor: pointer;
@@ -324,16 +416,51 @@ strong {
 	top: 0px;
 	right: 0px;
 }
-
-
+.type3 #gnavi ul li .icon {
+	display: none;
+}
+.type3 #gnavi ul li .text {
+	background: #bbb url(../images/common/icon/icon02.png) 10px 10px no-repeat;
+	background-size: 22px 22px;
+	width: 100%;
+	height: 44px;
+	color: #fdfdfd;
+	line-height: 44px;
+	text-indent: 50px;
+}
+.type3 #gnavi ul li.gnavi00 .text {
+	background-image: url(../images/common/icon/icon01.png);
+}
+.type3 #gnavi ul li.gnavi01 .text {
+	background-color: #9353db;
+}
+.type3 #gnavi ul li.gnavi02 .text {
+	background-color: #F27A8C;
+}
+.type3 #gnavi ul li.gnavi03 .text {
+	background-color: #007BC9;
+}
+.type3 #gnavi ul li.gnavi04 .text {
+	background-color: #EB4997;
+}
+.type3 #gnavi ul li.gnavi05 .text {
+	background-color: #00ADF1;
+}
+.type3 #gnavi ul li.gnavi06 .text {
+	background-color: #A74299;
+}
+.type3 #gnavi ul li.gnavi07 .text {
+	background-color: #00ADAB;
+}
+.type3 #gnavi ul li.gnavi08 .text {
+	background-color: #F9AF00;
+}
 /**************円形のナビ（pcのみ、smpは非表示）***************/
 
 .type1 #mnavi_container {
 	position: relative;		
 	margin-top: -10px;
 }
-
-
 .type1 #mnavi {
 	position: relative;
 	top: 0px;
@@ -344,22 +471,31 @@ strong {
 }
 .type1 #mnavi:after{
   /*クリアフィックス*/
-    content: "."; 
-    display: block; 
-    height: 0; 
-    font-size:0;  
-    clear: both; 
-    visibility:hidden;
+  content: "."; 
+  display: block; 
+  height: 0; 
+  font-size:0;  
+  clear: both; 
+  visibility:hidden;
 }
 .type1 #mnavi ul li {
 	display: block;
-	width: 163px;
-	height: 164px;
+	width: 122px;
+	height: 123px;
 	float: left;
 	text-indent: -9999px;
+	background-image: url(../images/common/mnavi/mnavi00.png);
+	background-size: 122px 123px;
+	margin-right: 2px;
+}
+.type1 #mnavi ul li + li {
+	margin-right: 0;
+}
+.type1 #mnavi ul li#mnavi01 {
+	background-image: url(../images/common/mnavi/mnavi01.png);
 }
 .type1 #mnavi ul li#mnavi02 {
-	background-image: url(../images/common/mnavi/mnavi02.png);	
+	background-image: url(../images/common/mnavi/mnavi02.png);
 }
 .type1 #mnavi ul li#mnavi03 {
 	background-image: url(../images/common/mnavi/mnavi03.png);	
@@ -376,8 +512,6 @@ strong {
 .type1 #mnavi ul li#mnavi07 {
 	background-image: url(../images/common/mnavi/mnavi07.png);	
 }
-
-
 /****** 円形ナビの背景（アニメ部分）******/
 .type1 #mnavi_bg {
 	position: absolute;
@@ -389,19 +523,24 @@ strong {
 }
 .type1 #mnavi_bg:after{
   /*クリアフィックス*/
-    content: "."; 
-    display: block; 
-    height: 0; 
-    font-size:0;  
-    clear: both; 
-    visibility:hidden;
+  content: "."; 
+  display: block; 
+  height: 0; 
+  font-size:0;  
+  clear: both; 
+  visibility:hidden;
 }
 .type1 #mnavi_bg ul li {
 	display: block;
-	width: 163px;
-	height: 164px;
+	width: 122px;
+	height: 123px;
 	float: left;
 	text-indent: -9999px;
+	background: url(../images/common/mnavi/mnavi_bg00.png) -2px 0;
+	background-size: 6096px 127px;
+}
+.type1 #mnavi_bg ul li#mnavi_bg01 {
+	background-image: url(../images/common/mnavi/mnavi_bg01.png);
 }
 .type1 #mnavi_bg ul li#mnavi_bg02 {
 	background-image: url(../images/common/mnavi/mnavi_bg02.png);
@@ -430,131 +569,141 @@ strong {
 	top: 0px;
 	left: 0px;
 	width: 980px;
-	height: 164px;
+	height: 123px;
 	
 	/*pointer-events: none;*/
 }
 .type1 #mnavi_hover:after{
   /*クリアフィックス*/
-    content: "."; 
-    display: block; 
-    height: 0; 
-    font-size:0;  
-    clear: both; 
-    visibility:hidden;
+  content: "."; 
+  display: block; 
+  height: 0; 
+  font-size:0;  
+  clear: both; 
+  visibility:hidden;
 }
-
 .type1 #mnavi_hover ul li {
 	list-style-type: none;
 	text-indent: -9999px;
-	width: 163px;
-	height: 164px;
+	width: 122px;
+	height: 123px;
 	float: left;
 }
 .type1 #mnavi_hover ul li a {
 	position: relative;
 	display: block;
+	width: 122px;
+	height: 123px;
 }
-
-.type1 #mnavi_hover ul li#mnavi_ho02 .icon1 {
+.type1 #mnavi_hover ul li a > div {
 	position: absolute;
-	width: 170px;
-	height: 170px;
-	top: 0px;
-	left: 0px;
+	width: 122px;
+	height: 123px;
+	top: 0;
+	left: 0;
+}
+.type1 #mnavi_hover ul li .icon1 {
+	background-image: url(../images/common/mnavi/icon_flower00.png);
+	background-size: 1270px 127px;
+}
+.type1 #mnavi_hover ul li .icon2 {
+	background: url(../images/common/mnavi/icon_butterfly00.png);
+	background-size: 6096px 127px;
+}
+.type1 #mnavi_hover ul li#mnavi_ho02 .icon1 {
 	background-image: url(../images/common/mnavi/icon_flower02.png);
 }
 .type1 #mnavi_hover ul li#mnavi_ho02 .icon2 {
-	position: absolute;
+	/*position: absolute;
 	width: 170px;
 	height: 170px;
 	top: 0px;
-	left: 0px;
+	left: 0px;*/
 	background-image: url(../images/common/mnavi/icon_butterfly02.png);
 }
 
 .type1 #mnavi_hover ul li#mnavi_ho03 .icon1 {
-	position: absolute;
+	/*position: absolute;
 	width: 170px;
 	height: 170px;
 	top: 0px;
-	left: 0px;
+	left: 0px;*/
 	background-image: url(../images/common/mnavi/icon_flower03.png);
 }
 .type1 #mnavi_hover ul li#mnavi_ho03 .icon2 {
-	position: absolute;
+	/*position: absolute;
 	width: 170px;
 	height: 170px;
 	top: 0px;
-	left: 0px;
+	left: 0px;*/
 	background-image: url(../images/common/mnavi/icon_butterfly03.png);
 }
 
 .type1 #mnavi_hover ul li#mnavi_ho04 .icon1 {
-	position: absolute;
+	/*position: absolute;
 	width: 170px;
 	height: 170px;
 	top: 0px;
-	left: 0px;
+	left: 0px;*/
 	background-image: url(../images/common/mnavi/icon_flower04.png);
 }
 .type1 #mnavi_hover ul li#mnavi_ho04 .icon2 {
-	position: absolute;
+	/*position: absolute;
 	width: 170px;
 	height: 170px;
 	top: 0px;
-	left: 0px;
+	left: 0px;*/
 	background-image: url(../images/common/mnavi/icon_butterfly04.png);
 }
 
 .type1 #mnavi_hover ul li#mnavi_ho05 .icon1 {
-	position: absolute;
+	/*position: absolute;
 	width: 170px;
 	height: 170px;
 	top: 0px;
-	left: 0px;
+	left: 0px;*/
 	background-image: url(../images/common/mnavi/icon_flower05.png);
 }
 .type1 #mnavi_hover ul li#mnavi_ho05 .icon2 {
-	position: absolute;
+	/*position: absolute;
 	width: 170px;
 	height: 170px;
 	top: 0px;
-	left: 0px;
+	left: 0px;*/
 	background-image: url(../images/common/mnavi/icon_butterfly05.png);
 }
 
 .type1 #mnavi_hover ul li#mnavi_ho06 .icon1 {
-	position: absolute;
+	/*position: absolute;
 	width: 170px;
 	height: 170px;
 	top: 0px;
-	left: 0px;
+	left: 0px;*/
 	background-image: url(../images/common/mnavi/icon_flower06.png);
 }
 .type1 #mnavi_hover ul li#mnavi_ho06 .icon2 {
-	position: absolute;
+	/*position: absolute;
 	width: 170px;
 	height: 170px;
 	top: 0px;
-	left: 0px;
+	left: 0px;*/
 	background-image: url(../images/common/mnavi/icon_butterfly06.png);
 }
 
 .type1 #mnavi_hover ul li#mnavi_ho07 .icon1 {
-	position: absolute;
+	/*position: absolute;
 	width: 170px;
 	height: 170px;
 	top: 0px;
-	left: 0px;
+	left: 0px;*/
 	background-image: url(../images/common/mnavi/icon_flower07.png);
 }
 .type1 #mnavi_hover ul li#mnavi_ho07 .icon2 {
-	position: absolute;
+	/*position: absolute;
 	width: 170px;
 	height: 170px;
 	top: 0px;
-	left: 0px;
+	left: 0px;*/
 	background-image: url(../images/common/mnavi/icon_butterfly07.png);
 }
 

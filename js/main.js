@@ -11,6 +11,8 @@ jQuery.noConflict();
 /*グローバル変数*/
 var speed0 = 6;
 var speed1 = 0;
+var mnavi00_speed = speed0;
+var mnavi01_speed = speed0;
 var mnavi02_speed = speed0;
 var mnavi03_speed = speed0;
 var mnavi04_speed = speed0;
@@ -47,6 +49,8 @@ jQuery(function(){
 	});
 
 	//初期値は透明（蝶）
+	jQuery('#mnavi_hover ul li#mnavi_ho00 .icon2').animate({opacity: 0}, {duration: 0});
+	jQuery('#mnavi_hover ul li#mnavi_ho01 .icon2').animate({opacity: 0}, {duration: 0});
 	jQuery('#mnavi_hover ul li#mnavi_ho02 .icon2').animate({opacity: 0}, {duration: 0});
 	jQuery('#mnavi_hover ul li#mnavi_ho03 .icon2').animate({opacity: 0}, {duration: 0});
 	jQuery('#mnavi_hover ul li#mnavi_ho04 .icon2').animate({opacity: 0}, {duration: 0});
@@ -57,6 +61,34 @@ jQuery(function(){
 	
 	
 	//mnaviマウスオーバー処理
+	jQuery("#mnavi_hover ul li#mnavi_ho00 a").hover(
+		function(){
+			mnavi00_speed = speed1;
+			jQuery("#gnavi ul li#gnavi00").addClass("select");
+			//蝶
+			jQuery('.type1 #mnavi_hover ul li#mnavi_ho00 .icon2').animate({opacity: 1}, {duration: 500});
+		},
+		function(){
+			mnavi00_speed = speed0;
+			jQuery("#gnavi ul li#gnavi00").removeClass("select");
+			//蝶
+			jQuery('.type1 #mnavi_hover ul li#mnavi_ho00 .icon2').animate({opacity: 0}, {duration: 500});
+		}
+	);
+	jQuery("#mnavi_hover ul li#mnavi_ho01 a").hover(
+		function(){
+			mnavi01_speed = speed1;
+			jQuery("#gnavi ul li#gnavi01").addClass("select");
+			//蝶
+			jQuery('.type1 #mnavi_hover ul li#mnavi_ho01 .icon2').animate({opacity: 1}, {duration: 500});
+		},
+		function(){
+			mnavi01_speed = speed0;
+			jQuery("#gnavi ul li#gnavi01").removeClass("select");
+			//蝶
+			jQuery('.type1 #mnavi_hover ul li#mnavi_ho01 .icon2').animate({opacity: 0}, {duration: 500});
+		}
+	);
 	jQuery("#mnavi_hover ul li#mnavi_ho02 a").hover(
 		function(){
 			mnavi02_speed = speed1;
@@ -284,6 +316,8 @@ function adjust_width(){
 /*****************************************
 ループ処理1
 ******************************************/
+var anim_f00 = 0;
+var anim_f01 = 0;
 var anim_f02 = 0;
 var anim_f03 = 0;
 var anim_f04 = 0;
@@ -291,6 +325,8 @@ var anim_f05 = 0;
 var anim_f06 = 0;
 var anim_f07 = 0;
 
+var anim_c00 = 0;
+var anim_c01 = 0;
 var anim_c02 = 0;
 var anim_c03 = 0;
 var anim_c04 = 0;
@@ -303,13 +339,29 @@ var anim_c07 = 0;
 //////////////mnavi bg/////////////////
 
 function loop() {
-	jQuery('.type1 #mnavi_bg ul li#mnavi_bg02').css('background-position',anim_f02*170 -3);
-	jQuery('.type1 #mnavi_bg ul li#mnavi_bg03').css('background-position',anim_f03*170 -3);
-	jQuery('.type1 #mnavi_bg ul li#mnavi_bg04').css('background-position',anim_f04*170 -3);
-	jQuery('.type1 #mnavi_bg ul li#mnavi_bg05').css('background-position',anim_f05*170 -3);
-	jQuery('.type1 #mnavi_bg ul li#mnavi_bg06').css('background-position',anim_f06*170 -3);
-	jQuery('.type1 #mnavi_bg ul li#mnavi_bg07').css('background-position',anim_f07*170 -3);
+	var moveWidth = 127;
+	jQuery('.type1 #mnavi_bg ul li#mnavi_bg00').css('background-position', -anim_f00*moveWidth -2 + 'px 0');
+	jQuery('.type1 #mnavi_bg ul li#mnavi_bg01').css('background-position', -anim_f01*moveWidth -2 + 'px 0');
+	jQuery('.type1 #mnavi_bg ul li#mnavi_bg02').css('background-position', -anim_f02*moveWidth -2 + 'px 0');
+	jQuery('.type1 #mnavi_bg ul li#mnavi_bg03').css('background-position', -anim_f03*moveWidth -2 + 'px 0');
+	jQuery('.type1 #mnavi_bg ul li#mnavi_bg04').css('background-position', -anim_f04*moveWidth -2 + 'px 0');
+	jQuery('.type1 #mnavi_bg ul li#mnavi_bg05').css('background-position', -anim_f05*moveWidth -2 + 'px 0');
+	jQuery('.type1 #mnavi_bg ul li#mnavi_bg06').css('background-position', -anim_f06*moveWidth -2 + 'px 0');
+	jQuery('.type1 #mnavi_bg ul li#mnavi_bg07').css('background-position', -anim_f07*moveWidth -2 + 'px 0');
 	
+	
+	if(anim_c00 > mnavi00_speed ){
+		anim_f00++;
+		anim_c00 = 0;
+	}else{
+		anim_c00++;
+	}
+	if(anim_c01 > mnavi01_speed ){
+		anim_f01++;
+		anim_c01 = 0;
+	}else{
+		anim_c01++;
+	}
 	if(anim_c02 > mnavi02_speed ){
 		anim_f02++;
 		anim_c02 = 0;
@@ -374,6 +426,8 @@ function loop() {
 /*****************************************
 ループ処理2
 ******************************************/
+var hoverAnim0_1 = 0;//花開花
+var hoverAnim1_1 = 0;//花開花
 var hoverAnim2_1 = 0;//花開花
 var hoverAnim3_1 = 0;//花開花
 var hoverAnim4_1 = 0;//花開花
@@ -381,6 +435,8 @@ var hoverAnim5_1 = 0;//花開花
 var hoverAnim6_1 = 0;//花開花
 var hoverAnim7_1 = 0;//花開花
 
+var hoverAnim0_2 = 0;//蝶
+var hoverAnim1_2 = 0;//蝶
 var hoverAnim2_2 = 0;//蝶
 var hoverAnim3_2 = 0;//蝶
 var hoverAnim4_2 = 0;//蝶
@@ -391,6 +447,30 @@ var hoverAnim7_2 = 0;//蝶
 function loop2() {
 	
 	//////////////mnavi over/////////////////
+	if(mnavi00_speed == speed1){
+		//花開花
+		if(hoverAnim0_1 < 9){
+			hoverAnim0_1++;
+		}
+		//蝶
+		if(hoverAnim0_2 < 49){
+			hoverAnim0_2++;
+		}else{
+			hoverAnim0_2 = 0;
+		}
+	}
+	if(mnavi01_speed == speed1){
+		//花開花
+		if(hoverAnim1_1 < 9){
+			hoverAnim1_1++;
+		}
+		//蝶
+		if(hoverAnim1_2 < 49){
+			hoverAnim1_2++;
+		}else{
+			hoverAnim1_2 = 0;
+		}
+	}
 	if(mnavi02_speed == speed1){
 		//花開花
 		if(hoverAnim2_1 < 9){
@@ -465,6 +545,18 @@ function loop2() {
 	}
 	
 	//////////////mnavi out/////////////////
+	if(mnavi00_speed == speed0){
+		//花開花
+		if(hoverAnim0_1 > 0){
+			hoverAnim0_1--;
+		}
+	}
+	if(mnavi01_speed == speed0){
+		//花開花
+		if(hoverAnim1_1 > 0){
+			hoverAnim1_1--;
+		}
+	}
 	if(mnavi02_speed == speed0){
 		//花開花
 		if(hoverAnim2_1 > 0){
@@ -502,19 +594,24 @@ function loop2() {
 		}
 	}
 	
-	jQuery('.type1 #mnavi_hover ul li#mnavi_ho02 .icon1').css('background-position',-hoverAnim2_1*170);
-	jQuery('.type1 #mnavi_hover ul li#mnavi_ho03 .icon1').css('background-position',-hoverAnim3_1*170);
-	jQuery('.type1 #mnavi_hover ul li#mnavi_ho04 .icon1').css('background-position',-hoverAnim4_1*170);
-	jQuery('.type1 #mnavi_hover ul li#mnavi_ho05 .icon1').css('background-position',-hoverAnim5_1*170);
-	jQuery('.type1 #mnavi_hover ul li#mnavi_ho06 .icon1').css('background-position',-hoverAnim6_1*170);
-	jQuery('.type1 #mnavi_hover ul li#mnavi_ho07 .icon1').css('background-position',-hoverAnim7_1*170);
+	var moveWidth = 127;
+	jQuery('.type1 #mnavi_hover ul li#mnavi_ho00 .icon1').css('background-position',-hoverAnim0_1*moveWidth);
+	jQuery('.type1 #mnavi_hover ul li#mnavi_ho01 .icon1').css('background-position',-hoverAnim1_1*moveWidth);
+	jQuery('.type1 #mnavi_hover ul li#mnavi_ho02 .icon1').css('background-position',-hoverAnim2_1*moveWidth);
+	jQuery('.type1 #mnavi_hover ul li#mnavi_ho03 .icon1').css('background-position',-hoverAnim3_1*moveWidth);
+	jQuery('.type1 #mnavi_hover ul li#mnavi_ho04 .icon1').css('background-position',-hoverAnim4_1*moveWidth);
+	jQuery('.type1 #mnavi_hover ul li#mnavi_ho05 .icon1').css('background-position',-hoverAnim5_1*moveWidth);
+	jQuery('.type1 #mnavi_hover ul li#mnavi_ho06 .icon1').css('background-position',-hoverAnim6_1*moveWidth);
+	jQuery('.type1 #mnavi_hover ul li#mnavi_ho07 .icon1').css('background-position',-hoverAnim7_1*moveWidth);
 	
-	jQuery('.type1 #mnavi_hover ul li#mnavi_ho02 .icon2').css('background-position',-hoverAnim2_2*170);
-	jQuery('.type1 #mnavi_hover ul li#mnavi_ho03 .icon2').css('background-position',-hoverAnim3_2*170);
-	jQuery('.type1 #mnavi_hover ul li#mnavi_ho04 .icon2').css('background-position',-hoverAnim4_2*170);
-	jQuery('.type1 #mnavi_hover ul li#mnavi_ho05 .icon2').css('background-position',-hoverAnim5_2*170);
-	jQuery('.type1 #mnavi_hover ul li#mnavi_ho06 .icon2').css('background-position',-hoverAnim6_2*170);
-	jQuery('.type1 #mnavi_hover ul li#mnavi_ho07 .icon2').css('background-position',-hoverAnim7_2*170);
+	jQuery('.type1 #mnavi_hover ul li#mnavi_ho00 .icon2').css('background-position',-hoverAnim0_2*moveWidth);
+	jQuery('.type1 #mnavi_hover ul li#mnavi_ho01 .icon2').css('background-position',-hoverAnim1_2*moveWidth);
+	jQuery('.type1 #mnavi_hover ul li#mnavi_ho02 .icon2').css('background-position',-hoverAnim2_2*moveWidth);
+	jQuery('.type1 #mnavi_hover ul li#mnavi_ho03 .icon2').css('background-position',-hoverAnim3_2*moveWidth);
+	jQuery('.type1 #mnavi_hover ul li#mnavi_ho04 .icon2').css('background-position',-hoverAnim4_2*moveWidth);
+	jQuery('.type1 #mnavi_hover ul li#mnavi_ho05 .icon2').css('background-position',-hoverAnim5_2*moveWidth);
+	jQuery('.type1 #mnavi_hover ul li#mnavi_ho06 .icon2').css('background-position',-hoverAnim6_2*moveWidth);
+	jQuery('.type1 #mnavi_hover ul li#mnavi_ho07 .icon2').css('background-position',-hoverAnim7_2*moveWidth);
 	
 	
 	
