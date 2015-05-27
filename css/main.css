@@ -387,8 +387,9 @@ strong {
 .type1 #mnavi_container {
 	position: relative;		
 	margin-top: -10px;
+	height: 123px;
 }
-.type1 #mnavi {
+/*.type1 #mnavi {
 	position: relative;
 	top: 0px;
 	left: 0px;
@@ -397,7 +398,6 @@ strong {
 	list-style-type: none;
 }
 .type1 #mnavi:after{
-  /*クリアフィックス*/
   content: "."; 
   display: block; 
   height: 0; 
@@ -413,10 +413,10 @@ strong {
 	text-indent: -9999px;
 	background-image: url(../images/common/mnavi/mnavi00.png);
 	background-size: 122px 123px;
-	margin-right: 2px;
+	margin-left: 2px;
 }
 .type1 #mnavi ul li + li {
-	margin-right: 0;
+	margin-left: 0;
 }
 .type1 #mnavi ul li#mnavi01 {
 	background-image: url(../images/common/mnavi/mnavi01.png);
@@ -438,7 +438,7 @@ strong {
 }
 .type1 #mnavi ul li#mnavi07 {
 	background-image: url(../images/common/mnavi/mnavi07.png);	
-}
+}*/
 /****** 円形ナビの背景（アニメ部分）******/
 .type1 #mnavi_bg {
 	position: absolute;
@@ -465,6 +465,10 @@ strong {
 	text-indent: -9999px;
 	background: url(../images/common/mnavi/mnavi_bg00.png) -2px 0;
 	background-size: 6096px 127px;
+	margin-left: 2px;
+}
+.type1 #mnavi_bg ul li + li {
+	margin-left: 0;
 }
 .type1 #mnavi_bg ul li#mnavi_bg01 {
 	background-image: url(../images/common/mnavi/mnavi_bg01.png);
@@ -515,6 +519,10 @@ strong {
 	width: 122px;
 	height: 123px;
 	float: left;
+	margin-left: 2px;
+}
+.type1 #mnavi_hover ul li + li {
+	margin-left: 0;
 }
 .type1 #mnavi_hover ul li a {
 	position: relative;
