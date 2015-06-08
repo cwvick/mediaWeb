@@ -192,7 +192,7 @@ strong {
 .type1 #gnavi ul li {
 	float: left;
 	width: 122px;
-	height: 60px;
+	height: 70px;
 	overflow: hidden;
 	text-indent: -9999px;
 }
@@ -209,7 +209,7 @@ strong {
 	animation: spin 3.5s infinite linear;
 }
 .type1 #gnavi ul li .text {
-	height: 24px;
+	height: 34px;
 	width: 100%;
 	overflow: hidden;
 	background: url(../images/common/gnavi/navi_01_sprites.png) no-repeat;
@@ -221,7 +221,7 @@ strong {
 	background-position: 0 -36px;
 }
 .type1 #gnavi ul li.gnavi01:hover .text, .type1 #gnavi ul li.gnavi01.active .text {
-	background-position: 0 -60px;
+	background-position: 0 -65px;
 }
 .type1 #gnavi ul li.gnavi02 .icon {
 	background-position: -124px 0;
@@ -230,7 +230,7 @@ strong {
 	background-position: -124px -36px;
 }
 .type1 #gnavi ul li.gnavi02:hover .text, .type1 #gnavi ul li.gnavi02.active .text {
-	background-position: -124px -60px;
+	background-position: -124px -65px;
 }
 .type1 #gnavi ul li.gnavi03 .icon {
 	background-position: -246px 0;
@@ -239,7 +239,7 @@ strong {
 	background-position: -246px -36px;
 }
 .type1 #gnavi ul li.gnavi03:hover .text, .type1 #gnavi ul li.gnavi03.active .text {
-	background-position: -246px -60px;
+	background-position: -246px -65px;
 }
 .type1 #gnavi ul li.gnavi04 .icon {
 	background-position: -368px 0;
@@ -248,7 +248,7 @@ strong {
 	background-position: -368px -36px;
 }
 .type1 #gnavi ul li.gnavi04:hover .text, .type1 #gnavi ul li.gnavi04.active .text {
-	background-position: -368px -60px;
+	background-position: -368px -65px;
 }
 .type1 #gnavi ul li.gnavi05 .icon {
 	background-position: -490px 0;
@@ -257,7 +257,7 @@ strong {
 	background-position: -490px -36px;
 }
 .type1 #gnavi ul li.gnavi05:hover .text, .type1 #gnavi ul li.gnavi05.active .text {
-	background-position: -490px -60px;
+	background-position: -490px -65px;
 }
 .type1 #gnavi ul li.gnavi06 .icon {
 	background-position: -612px 0;
@@ -266,7 +266,7 @@ strong {
 	background-position: -612px -36px;
 }
 .type1 #gnavi ul li.gnavi06:hover .text, .type1 #gnavi ul li.gnavi06.active .text {
-	background-position: -612px -60px;
+	background-position: -612px -65px;
 }
 .type1 #gnavi ul li.gnavi07 .icon {
 	background-position: -734px 0;
@@ -275,7 +275,7 @@ strong {
 	background-position: -734px -36px;
 }
 .type1 #gnavi ul li.gnavi07:hover .text, .type1 #gnavi ul li.gnavi07.active .text {
-	background-position: -734px -60px;
+	background-position: -734px -65px;
 }
 .type1 #gnavi ul li.gnavi08 .icon {
 	background-position: -856px 0;
@@ -284,7 +284,7 @@ strong {
 	background-position: -856px -36px;
 }
 .type1 #gnavi ul li.gnavi08:hover .text, .type1 #gnavi ul li.gnavi08.active .text {
-	background-position: -856px -60px;
+	background-position: -856px -65px;
 }
 
 @-webkit-keyframes spin {
@@ -538,11 +538,11 @@ strong {
 	left: 0;
 }
 .type1 #mnavi_hover ul li .icon1 {
-	background-image: url(../images/common/mnavi/icon_flower00.png);
+	background-image: url(../images/common/mnavi/icon_flower01.png);
 	background-size: 1270px 127px;
 }
 .type1 #mnavi_hover ul li .icon2 {
-	background: url(../images/common/mnavi/icon_butterfly00.png);
+	background: url(../images/common/mnavi/icon_butterfly01.png);
 	background-size: 6096px 127px;
 }
 .type1 #mnavi_hover ul li#mnavi_ho02 .icon1 {
