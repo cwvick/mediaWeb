@@ -387,58 +387,7 @@ strong {
 .type1 #mnavi_container {
 	position: relative;		
 	margin-top: -10px;
-	height: 123px;
 }
-/*.type1 #mnavi {
-	position: relative;
-	top: 0px;
-	left: 0px;
-}
-.type1 #mnavi ul li {
-	list-style-type: none;
-}
-.type1 #mnavi:after{
-  content: "."; 
-  display: block; 
-  height: 0; 
-  font-size:0;  
-  clear: both; 
-  visibility:hidden;
-}
-.type1 #mnavi ul li {
-	display: block;
-	width: 122px;
-	height: 123px;
-	float: left;
-	text-indent: -9999px;
-	background-image: url(../images/common/mnavi/mnavi00.png);
-	background-size: 122px 123px;
-	margin-left: 2px;
-}
-.type1 #mnavi ul li + li {
-	margin-left: 0;
-}
-.type1 #mnavi ul li#mnavi01 {
-	background-image: url(../images/common/mnavi/mnavi01.png);
-}
-.type1 #mnavi ul li#mnavi02 {
-	background-image: url(../images/common/mnavi/mnavi02.png);
-}
-.type1 #mnavi ul li#mnavi03 {
-	background-image: url(../images/common/mnavi/mnavi03.png);	
-}
-.type1 #mnavi ul li#mnavi04 {
-	background-image: url(../images/common/mnavi/mnavi04.png);	
-}
-.type1 #mnavi ul li#mnavi05 {
-	background-image: url(../images/common/mnavi/mnavi05.png);	
-}
-.type1 #mnavi ul li#mnavi06 {
-	background-image: url(../images/common/mnavi/mnavi06.png);	
-}
-.type1 #mnavi ul li#mnavi07 {
-	background-image: url(../images/common/mnavi/mnavi07.png);	
-}*/
 /****** 円形ナビの背景（アニメ部分）******/
 .type1 #mnavi_bg {
 	position: absolute;
@@ -459,13 +408,12 @@ strong {
 }
 .type1 #mnavi_bg ul li {
 	display: block;
-	width: 122px;
-	height: 123px;
+	width: 163px;
+	height: 164px;
 	float: left;
 	text-indent: -9999px;
-	background: url(../images/common/mnavi/mnavi_bg00.png) -2px 0;
-	background-size: 6096px 127px;
-	margin-left: 2px;
+	background: url(../images/common/mnavi/mnavi_bg00.png);
+	margin-left: 1px;
 }
 .type1 #mnavi_bg ul li + li {
 	margin-left: 0;
@@ -492,17 +440,12 @@ strong {
 	background-image: url(../images/common/mnavi/mnavi_bg07.png);	
 }
 
-
-
 /****** 円形ナビのオーバー装飾（花や蝶など）******/
 .type1 #mnavi_hover {
-	position: absolute;
+	position: relative;
 	top: 0px;
 	left: 0px;
 	width: 980px;
-	height: 123px;
-	
-	/*pointer-events: none;*/
 }
 .type1 #mnavi_hover:after{
   /*クリアフィックス*/
@@ -516,130 +459,125 @@ strong {
 .type1 #mnavi_hover ul li {
 	list-style-type: none;
 	text-indent: -9999px;
-	width: 122px;
-	height: 123px;
+	width: 163px;
+	/*height: 164px;*/
 	float: left;
-	margin-left: 2px;
+	margin-left: 1px;
+	position: relative;
 }
 .type1 #mnavi_hover ul li + li {
 	margin-left: 0;
 }
 .type1 #mnavi_hover ul li a {
-	position: relative;
 	display: block;
-	width: 122px;
-	height: 123px;
+	position: relative;
+	width: 123px;
+	/*height: 123px;*/
+	top: 22px;
+	left: 22px;
 }
-.type1 #mnavi_hover ul li a > div {
-	position: absolute;
-	width: 122px;
+.type1 #mnavi_hover ul li a .icon1 {
+	/*position: absolute;*/
+	width: 123px;
 	height: 123px;
-	top: 0;
-	left: 0;
+	overflow: hidden;
+	-webkit-border-radius: 123px;
+	-moz-border-radius: 123px;
+	border-radius: 123px;
+	background: url(../images/common/mnavi/mnavi_01.png) center no-repeat;
+	background-size: 123px 123px;
+	transition:all 0.5s ;
+  -webkit-transition:all 0.5s ;
+  -o-transition:all 0.5s ;
+  -moz-transition:all 0.5s ;
 }
-.type1 #mnavi_hover ul li .icon1 {
-	background-image: url(../images/common/mnavi/icon_flower01.png);
-	background-size: 1270px 127px;
+.type1 #mnavi_hover ul li a:hover .icon1, .type1 #mnavi_hover ul li#mnavi_ho02 a:hover .icon1, .type1 #mnavi_hover ul li#mnavi_ho03 a:hover .icon1, 
+.type1 #mnavi_hover ul li#mnavi_ho04 a:hover .icon1, .type1 #mnavi_hover ul li#mnavi_ho05 a:hover .icon1, .type1 #mnavi_hover ul li#mnavi_ho06 a:hover .icon1 {
+	background-size: 154px 154px;
+}
+.type1 #mnavi_hover ul li#mnavi_ho02 a .icon1 {
+	background: url(../images/common/mnavi/mnavi_02.png) center no-repeat;
+	background-size: 123px 123px;
+}
+.type1 #mnavi_hover ul li#mnavi_ho03 a .icon1 {
+	background: url(../images/common/mnavi/mnavi_03.png) center no-repeat;
+	background-size: 123px 123px;
+}
+
+.type1 #mnavi_hover ul li#mnavi_ho04 a .icon1 {
+	background: url(../images/common/mnavi/mnavi_04.png) center no-repeat;
+	background-size: 123px 123px;
+}
+
+.type1 #mnavi_hover ul li#mnavi_ho05 a .icon1 {
+	background: url(../images/common/mnavi/mnavi_05.png) center no-repeat;
+	background-size: 123px 123px;
+}
+
+.type1 #mnavi_hover ul li#mnavi_ho06 a .icon1 {
+	background: url(../images/common/mnavi/mnavi_06.png) center no-repeat;
+	background-size: 123px 123px;
 }
 .type1 #mnavi_hover ul li .icon2 {
-	background: url(../images/common/mnavi/icon_butterfly01.png);
-	background-size: 6096px 127px;
-}
-.type1 #mnavi_hover ul li#mnavi_ho02 .icon1 {
-	background-image: url(../images/common/mnavi/icon_flower02.png);
+	width: 92px;
+	height: 22px;
+	line-height: 24px;
+	overflow: hidden;
+	text-align: center;
+	background: #48408f url(../images/common/mnavi/news_arrow.png) right no-repeat;
+	color: #fff;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	text-indent: -8px;
+	font-size: 0.9em;
+  position: absolute;
+  top: 111px;
+  left: 0px;
 }
 .type1 #mnavi_hover ul li#mnavi_ho02 .icon2 {
-	/*position: absolute;
-	width: 170px;
-	height: 170px;
-	top: 0px;
-	left: 0px;*/
-	background-image: url(../images/common/mnavi/icon_butterfly02.png);
-}
-
-.type1 #mnavi_hover ul li#mnavi_ho03 .icon1 {
-	/*position: absolute;
-	width: 170px;
-	height: 170px;
-	top: 0px;
-	left: 0px;*/
-	background-image: url(../images/common/mnavi/icon_flower03.png);
+	background-color: #eb5269;
 }
 .type1 #mnavi_hover ul li#mnavi_ho03 .icon2 {
-	/*position: absolute;
-	width: 170px;
-	height: 170px;
-	top: 0px;
-	left: 0px;*/
-	background-image: url(../images/common/mnavi/icon_butterfly03.png);
-}
-
-.type1 #mnavi_hover ul li#mnavi_ho04 .icon1 {
-	/*position: absolute;
-	width: 170px;
-	height: 170px;
-	top: 0px;
-	left: 0px;*/
-	background-image: url(../images/common/mnavi/icon_flower04.png);
+	background-color: #187fc4;
 }
 .type1 #mnavi_hover ul li#mnavi_ho04 .icon2 {
-	/*position: absolute;
-	width: 170px;
-	height: 170px;
-	top: 0px;
-	left: 0px;*/
-	background-image: url(../images/common/mnavi/icon_butterfly04.png);
-}
-
-.type1 #mnavi_hover ul li#mnavi_ho05 .icon1 {
-	/*position: absolute;
-	width: 170px;
-	height: 170px;
-	top: 0px;
-	left: 0px;*/
-	background-image: url(../images/common/mnavi/icon_flower05.png);
+	background-color: #e85298;
 }
 .type1 #mnavi_hover ul li#mnavi_ho05 .icon2 {
-	/*position: absolute;
-	width: 170px;
-	height: 170px;
-	top: 0px;
-	left: 0px;*/
-	background-image: url(../images/common/mnavi/icon_butterfly05.png);
-}
-
-.type1 #mnavi_hover ul li#mnavi_ho06 .icon1 {
-	/*position: absolute;
-	width: 170px;
-	height: 170px;
-	top: 0px;
-	left: 0px;*/
-	background-image: url(../images/common/mnavi/icon_flower06.png);
+	background-color: #00afec;
 }
 .type1 #mnavi_hover ul li#mnavi_ho06 .icon2 {
-	/*position: absolute;
-	width: 170px;
-	height: 170px;
-	top: 0px;
-	left: 0px;*/
-	background-image: url(../images/common/mnavi/icon_butterfly06.png);
+	background-color: #a64a97;
 }
-
-.type1 #mnavi_hover ul li#mnavi_ho07 .icon1 {
-	/*position: absolute;
-	width: 170px;
-	height: 170px;
-	top: 0px;
-	left: 0px;*/
+/*.type1 #mnavi_hover ul li#mnavi_ho02 .icon2 {
+	background-image: url(../images/common/mnavi/icon_butterfly02.png);
+}*/
+/*.type1 #mnavi_hover ul li#mnavi_ho03 .icon2 {
+	background-image: url(../images/common/mnavi/icon_butterfly03.png);
+}*/
+/*.type1 #mnavi_hover ul li#mnavi_ho04 .icon2 {
+	background-image: url(../images/common/mnavi/icon_butterfly04.png);
+}*/
+/*.type1 #mnavi_hover ul li#mnavi_ho05 .icon2 {
+	background-image: url(../images/common/mnavi/icon_butterfly05.png);
+}*/
+/*.type1 #mnavi_hover ul li#mnavi_ho06 .icon2 {
+	background-image: url(../images/common/mnavi/icon_butterfly06.png);
+}*/
+/*.type1 #mnavi_hover ul li#mnavi_ho07 .icon1 {
 	background-image: url(../images/common/mnavi/icon_flower07.png);
 }
 .type1 #mnavi_hover ul li#mnavi_ho07 .icon2 {
-	/*position: absolute;
-	width: 170px;
-	height: 170px;
-	top: 0px;
-	left: 0px;*/
 	background-image: url(../images/common/mnavi/icon_butterfly07.png);
+}*/
+.type1 #mnavi_hover ul li a .news_subject {
+	text-decoration: underline;
+	text-indent: 0;
+	margin: 18px 0;
+	font-size: 0.95em;
+	line-height: 1.5em;
+	color: #8a8a8a;
 }
 
 

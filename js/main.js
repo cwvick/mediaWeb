@@ -49,14 +49,14 @@ jQuery(function(){
 	});
 
 	//初期値は透明（蝶）
-	jQuery('#mnavi_hover ul li#mnavi_ho00 .icon2').animate({opacity: 0}, {duration: 0});
-	jQuery('#mnavi_hover ul li#mnavi_ho01 .icon2').animate({opacity: 0}, {duration: 0});
-	jQuery('#mnavi_hover ul li#mnavi_ho02 .icon2').animate({opacity: 0}, {duration: 0});
-	jQuery('#mnavi_hover ul li#mnavi_ho03 .icon2').animate({opacity: 0}, {duration: 0});
-	jQuery('#mnavi_hover ul li#mnavi_ho04 .icon2').animate({opacity: 0}, {duration: 0});
-	jQuery('#mnavi_hover ul li#mnavi_ho05 .icon2').animate({opacity: 0}, {duration: 0});
-	jQuery('#mnavi_hover ul li#mnavi_ho06 .icon2').animate({opacity: 0}, {duration: 0});
-	jQuery('#mnavi_hover ul li#mnavi_ho07 .icon2').animate({opacity: 0}, {duration: 0});
+	// jQuery('#mnavi_hover ul li#mnavi_ho00 .icon2').animate({opacity: 0}, {duration: 0});
+	// jQuery('#mnavi_hover ul li#mnavi_ho01 .icon2').animate({opacity: 0}, {duration: 0});
+	// jQuery('#mnavi_hover ul li#mnavi_ho02 .icon2').animate({opacity: 0}, {duration: 0});
+	// jQuery('#mnavi_hover ul li#mnavi_ho03 .icon2').animate({opacity: 0}, {duration: 0});
+	// jQuery('#mnavi_hover ul li#mnavi_ho04 .icon2').animate({opacity: 0}, {duration: 0});
+	// jQuery('#mnavi_hover ul li#mnavi_ho05 .icon2').animate({opacity: 0}, {duration: 0});
+	// jQuery('#mnavi_hover ul li#mnavi_ho06 .icon2').animate({opacity: 0}, {duration: 0});
+	// jQuery('#mnavi_hover ul li#mnavi_ho07 .icon2').animate({opacity: 0}, {duration: 0});
 	
 	
 	
@@ -66,13 +66,13 @@ jQuery(function(){
 			mnavi00_speed = speed1;
 			jQuery("#gnavi ul li#gnavi00").addClass("select");
 			//蝶
-			jQuery('.type1 #mnavi_hover ul li#mnavi_ho00 .icon2').animate({opacity: 1}, {duration: 500});
+			// jQuery('.type1 #mnavi_hover ul li#mnavi_ho00 .icon2').animate({opacity: 1}, {duration: 500});
 		},
 		function(){
 			mnavi00_speed = speed0;
 			jQuery("#gnavi ul li#gnavi00").removeClass("select");
 			//蝶
-			jQuery('.type1 #mnavi_hover ul li#mnavi_ho00 .icon2').animate({opacity: 0}, {duration: 500});
+			// jQuery('.type1 #mnavi_hover ul li#mnavi_ho00 .icon2').animate({opacity: 0}, {duration: 500});
 		}
 	);
 	jQuery("#mnavi_hover ul li#mnavi_ho01 a").hover(
@@ -80,13 +80,13 @@ jQuery(function(){
 			mnavi01_speed = speed1;
 			jQuery("#gnavi ul li#gnavi01").addClass("select");
 			//蝶
-			jQuery('.type1 #mnavi_hover ul li#mnavi_ho01 .icon2').animate({opacity: 1}, {duration: 500});
+			// jQuery('.type1 #mnavi_hover ul li#mnavi_ho01 .icon2').animate({opacity: 1}, {duration: 500});
 		},
 		function(){
 			mnavi01_speed = speed0;
 			jQuery("#gnavi ul li#gnavi01").removeClass("select");
 			//蝶
-			jQuery('.type1 #mnavi_hover ul li#mnavi_ho01 .icon2').animate({opacity: 0}, {duration: 500});
+			// jQuery('.type1 #mnavi_hover ul li#mnavi_ho01 .icon2').animate({opacity: 0}, {duration: 500});
 		}
 	);
 	jQuery("#mnavi_hover ul li#mnavi_ho02 a").hover(
@@ -94,13 +94,13 @@ jQuery(function(){
 			mnavi02_speed = speed1;
 			jQuery("#gnavi ul li#gnavi02").addClass("select");
 			//蝶
-			jQuery('.type1 #mnavi_hover ul li#mnavi_ho02 .icon2').animate({opacity: 1}, {duration: 500});
+			// jQuery('.type1 #mnavi_hover ul li#mnavi_ho02 .icon2').animate({opacity: 1}, {duration: 500});
 		},
 		function(){
 			mnavi02_speed = speed0;
 			jQuery("#gnavi ul li#gnavi02").removeClass("select");
 			//蝶
-			jQuery('.type1 #mnavi_hover ul li#mnavi_ho02 .icon2').animate({opacity: 0}, {duration: 500});
+			// jQuery('.type1 #mnavi_hover ul li#mnavi_ho02 .icon2').animate({opacity: 0}, {duration: 500});
 		}
 	);
 	jQuery("#mnavi_hover ul li#mnavi_ho03 a").hover(
@@ -108,13 +108,13 @@ jQuery(function(){
 			mnavi03_speed = speed1;
 			jQuery("#gnavi ul li#gnavi03").addClass("select");
 			//蝶
-			jQuery('.type1 #mnavi_hover ul li#mnavi_ho03 .icon2').animate({opacity: 1}, {duration: 500});
+			// jQuery('.type1 #mnavi_hover ul li#mnavi_ho03 .icon2').animate({opacity: 1}, {duration: 500});
 		},
 		function(){
 			mnavi03_speed = speed0;
 			jQuery("#gnavi ul li#gnavi03").removeClass("select");
 			//蝶
-			jQuery('.type1 #mnavi_hover ul li#mnavi_ho03 .icon2').animate({opacity: 0}, {duration: 500});
+			// jQuery('.type1 #mnavi_hover ul li#mnavi_ho03 .icon2').animate({opacity: 0}, {duration: 500});
 		}
 	);
 	jQuery("#mnavi_hover ul li#mnavi_ho04 a").hover(
@@ -122,13 +122,13 @@ jQuery(function(){
 			mnavi04_speed = speed1;
 			jQuery("#gnavi ul li#gnavi04").addClass("select");
 			//蝶
-			jQuery('.type1 #mnavi_hover ul li#mnavi_ho04 .icon2').animate({opacity: 1}, {duration: 500});
+			// jQuery('.type1 #mnavi_hover ul li#mnavi_ho04 .icon2').animate({opacity: 1}, {duration: 500});
 		},
 		function(){
 			mnavi04_speed = speed0;
 			jQuery("#gnavi ul li#gnavi04").removeClass("select");
 			//蝶
-			jQuery('.type1 #mnavi_hover ul li#mnavi_ho04 .icon2').animate({opacity: 0}, {duration: 500});
+			// jQuery('.type1 #mnavi_hover ul li#mnavi_ho04 .icon2').animate({opacity: 0}, {duration: 500});
 		}
 	);
 	jQuery("#mnavi_hover ul li#mnavi_ho05 a").hover(
@@ -136,13 +136,13 @@ jQuery(function(){
 			mnavi05_speed = speed1;
 			jQuery("#gnavi ul li#gnavi05").addClass("select");
 			//蝶
-			jQuery('.type1 #mnavi_hover ul li#mnavi_ho05 .icon2').animate({opacity: 1}, {duration: 500});
+			// jQuery('.type1 #mnavi_hover ul li#mnavi_ho05 .icon2').animate({opacity: 1}, {duration: 500});
 		},
 		function(){
 			mnavi05_speed = speed0;
 			jQuery("#gnavi ul li#gnavi05").removeClass("select");
 			//蝶
-			jQuery('.type1 #mnavi_hover ul li#mnavi_ho05 .icon2').animate({opacity: 0}, {duration: 500});
+			// jQuery('.type1 #mnavi_hover ul li#mnavi_ho05 .icon2').animate({opacity: 0}, {duration: 500});
 		}
 	);
 	jQuery("#mnavi_hover ul li#mnavi_ho06 a").hover(
@@ -150,13 +150,13 @@ jQuery(function(){
 			mnavi06_speed = speed1;
 			jQuery("#gnavi ul li#gnavi06").addClass("select");
 			//蝶
-			jQuery('.type1 #mnavi_hover ul li#mnavi_ho06 .icon2').animate({opacity: 1}, {duration: 500});
+			// jQuery('.type1 #mnavi_hover ul li#mnavi_ho06 .icon2').animate({opacity: 1}, {duration: 500});
 		},
 		function(){
 			mnavi06_speed = speed0;
 			jQuery("#gnavi ul li#gnavi06").removeClass("select");
 			//蝶
-			jQuery('.type1 #mnavi_hover ul li#mnavi_ho06 .icon2').animate({opacity: 0}, {duration: 500});
+			// jQuery('.type1 #mnavi_hover ul li#mnavi_ho06 .icon2').animate({opacity: 0}, {duration: 500});
 		}
 	);
 	jQuery("#mnavi_hover ul li#mnavi_ho07 a").hover(
@@ -164,20 +164,19 @@ jQuery(function(){
 			mnavi07_speed = speed1;
 			jQuery("#gnavi ul li#gnavi07").addClass("select");
 			//蝶
-			jQuery('.type1 #mnavi_hover ul li#mnavi_ho07 .icon2').animate({opacity: 1}, {duration: 500});
+			// jQuery('.type1 #mnavi_hover ul li#mnavi_ho07 .icon2').animate({opacity: 1}, {duration: 500});
 		},
 		function(){
 			mnavi07_speed = speed0;
 			jQuery("#gnavi ul li#gnavi07").removeClass("select");
 			//蝶
-			jQuery('.type1 #mnavi_hover ul li#mnavi_ho07 .icon2').animate({opacity: 0}, {duration: 500});
+			// jQuery('.type1 #mnavi_hover ul li#mnavi_ho07 .icon2').animate({opacity: 0}, {duration: 500});
 		}
 	);
 	
-	
 	//ループ処理開始
 	setInterval("loop()",8);//丸背景用
-	setInterval("loop2()",30);//丸前面用
+	// setInterval("loop2()",30);//丸前面用
 	
 	
 	//トップページトピックス　クラス付加
@@ -339,7 +338,7 @@ var anim_c07 = 0;
 //////////////mnavi bg/////////////////
 
 function loop() {
-	var moveWidth = 127;
+	var moveWidth = 170;
 	jQuery('.type1 #mnavi_bg ul li#mnavi_bg00').css('background-position', -anim_f00*moveWidth -2 + 'px 0');
 	jQuery('.type1 #mnavi_bg ul li#mnavi_bg01').css('background-position', -anim_f01*moveWidth -2 + 'px 0');
 	jQuery('.type1 #mnavi_bg ul li#mnavi_bg02').css('background-position', -anim_f02*moveWidth -2 + 'px 0');
