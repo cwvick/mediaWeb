@@ -31,6 +31,7 @@ h2 {
 	text-align: justify;
 	border: solid 1px #bdbebc;
 	padding: 18px 68px 18px 68px;
+	position: relative;
 }
 h3 {
 	width: 820px;
@@ -83,4 +84,17 @@ div.title1 {
 div.line {
 	margin-right: auto;
 	margin-left: auto;
+}
+.q_icon {
+	position: absolute;
+	top: 19px;
+	left: -7px;
+}
+.type3 h2 {
+	width: auto;
+	padding: 18px 30px 10px 40px;
+	margin-top: 20px;
+}
+.type3 h1 {
+	width: 100%;
 }

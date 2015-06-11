@@ -347,7 +347,7 @@ strong {
 	display: none;
 }
 .type3 #gnavi ul li .text {
-	background: #bbb url(../images/common/icon/icon02.png) 10px 10px no-repeat;
+	background: #bbb url(../images/common/icon/icon00.png) 10px 10px no-repeat;
 	background-size: 22px 22px;
 	width: 100%;
 	height: 44px;
@@ -356,37 +356,45 @@ strong {
 	text-indent: 50px;
 }
 .type3 #gnavi ul li.gnavi00 .text {
-	background-image: url(../images/common/icon/icon01.png);
+	background-image: url(../images/common/icon/icon_home.png);
 }
 .type3 #gnavi ul li.gnavi01 .text {
 	background-color: #9353db;
 }
 .type3 #gnavi ul li.gnavi02 .text {
-	background-color: #F27A8C;
+	background: #F27A8C url(../images/common/icon/icon01.png) 10px 10px no-repeat;
+	background-size: 22px 22px;
 }
 .type3 #gnavi ul li.gnavi03 .text {
-	background-color: #007BC9;
+	background: #007BC9 url(../images/common/icon/icon02.png) 10px 10px no-repeat;
+	background-size: 22px 22px;
 }
 .type3 #gnavi ul li.gnavi04 .text {
-	background-color: #EB4997;
+	background: #EB4997 url(../images/common/icon/icon03.png) 10px 10px no-repeat;
+	background-size: 22px 22px;
 }
 .type3 #gnavi ul li.gnavi05 .text {
-	background-color: #00ADF1;
+	background: #00ADF1 url(../images/common/icon/icon04.png) 10px 10px no-repeat;
+	background-size: 22px 22px;
 }
 .type3 #gnavi ul li.gnavi06 .text {
-	background-color: #A74299;
+	background: #A74299 url(../images/common/icon/icon05.png) 10px 10px no-repeat;
+	background-size: 22px 22px;
 }
 .type3 #gnavi ul li.gnavi07 .text {
-	background-color: #00ADAB;
+	background: #00ADAB url(../images/common/icon/icon06.png) 10px 10px no-repeat;
+	background-size: 22px 22px;
 }
 .type3 #gnavi ul li.gnavi08 .text {
-	background-color: #F9AF00;
+	background: #F9AF00 url(../images/common/icon/icon07.png) 10px 10px no-repeat;
+	background-size: 22px 22px;
 }
 /**************円形のナビ（pcのみ、smpは非表示）***************/
 
 .type1 #mnavi_container {
 	position: relative;		
-	margin-top: -10px;
+	margin-top: 10px;
+	margin-bottom: 50px;
 }
 /****** 円形ナビの背景（アニメ部分）******/
 .type1 #mnavi_bg {
@@ -590,10 +598,8 @@ strong {
 
 #topimage {
 	position: relative;
-	overflow: hidden;
 }
 .type1 #topimage {
-	
 }
 .type3 #topimage {
 	width: 100%;
@@ -618,7 +624,7 @@ strong {
 }
 #topimage_frame02 {
 	position: absolute;
-	bottom: 20px;
+	bottom: 0;
 }
 .type3 #topimage_frame02 img {
 	height: 20px;
@@ -638,11 +644,11 @@ strong {
 	right: 0;
 }
 #topimage_corner img.img_corner_RB {
-	bottom: 20px;
+	bottom: 0;
 	right: 0;
 }
 #topimage_corner img.img_corner_LB {
-	bottom: 20px;
+	bottom: 0;
 	left: 0;
 }
 
@@ -714,17 +720,57 @@ strong {
 	height: 0;
 	overflow: hidden;
 }
-
 .clearfix {
 	display: inline-block;
 }
-
 /* Hides from IE-mac \*/
 * html .clearfix {
 	height: 1%;
 }
-
 .clearfix {
 	display: block;
 }
 /* End hide from IE-mac */
+.type3 #mnavi_hover .icon1, .type3 #mnavi_hover .icon2 {
+	display: none;
+}
+.type3 #mnavi_hover {
+	margin-top: 30px;
+}
+.type3 #mnavi_hover a {
+	color: #8a8a8a;
+	font-size: 16px;
+	line-height: 22px;
+	text-decoration: underline;
+	width: 90%;
+	margin: 0 auto 22px;
+	display: block;
+}
+#topimage .topBase {
+	position: relative;
+	z-index: 2;
+}
+#topimage .topTitle {
+	position: absolute;
+	bottom: -120px;
+	right: 20px;
+	z-index: 3;
+}
+#topimage .topMobile {
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  line-height: 46px;
+  padding-top: 10px;
+  position: relative;
+  z-index: 1;
+  top: -10px;
+  letter-spacing: 2px;
+  margin-bottom: -10px;
+}
+.type1 #subtext {
+	padding-top: 120px;
+}
+.type3 #subtext {
+	padding-top: 20px;
+}

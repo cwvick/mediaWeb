@@ -24,8 +24,9 @@ div.image1 {
 	float: left;
 	margin-left: 40px;
 	margin-right: -20px;
-	margin-bottom: 66px;	
+	/*margin-bottom: 66px;*/
 	width: 240px;
+	height: 300px;
 	font-size: 10px;
 	color: #444;
 	line-height: 16px;
